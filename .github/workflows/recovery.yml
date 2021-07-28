@@ -14,14 +14,14 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git -b android-9.0
-  DEVICE: rosy
-  DT_LINK: https://github.com/JamieHoSzeYui/android_recovery_xiaomi_rosy
-  DT_PATH: device/xiaomi/rosy
-  KERNEL_LINK: https://github.com/Pulkit077/kernel_xiaomi_rosy
-  KERNEL_PATH: kernel/xiaomi/rosy
+  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
+  DEVICE: gta4xlwifi
+  DT_LINK: https://github.com/gta4xl/twrp_device_samsung_gta4xlwifi
+  DT_PATH: device/samsung/gta4xlwifi
+  KERNEL_LINK: https://github.com/gta4xl/android_kernel_samsung_gta4xl
+  KERNEL_PATH: kernel/samsung gta4xl
   TARGET: recoveryimage
-  TZ: Asia/Kolkata
+  TZ: Europe/Madrid
 
 jobs:
   build:
